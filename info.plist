@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.hilbertgilbertson.alfred-snowcord</string>
+	<key>category</key>
+	<string>Tools</string>
+	<key>connections</key>
+	<dict>
+		<key>346F5E3D-D496-46E4-A34F-BF6608AC19FD</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>01F4F07D-874D-449F-9EA6-EE3A86A32AC1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>3F481F84-6E33-49D9-B6D2-9968C7B3360E</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>3FACC436-A2AB-4D54-87EC-CD35FAC98CF3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>350BB902-6BEB-49EC-837B-E4A15709211C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>434514CC-78F1-4EC7-9C04-5E320F49A814</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>434514CC-78F1-4EC7-9C04-5E320F49A814</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E19FABD5-7673-4838-B27E-3C0120E4462D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>45BDFF40-7374-4F55-A9FF-AEEB49D99D5E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>346F5E3D-D496-46E4-A34F-BF6608AC19FD</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>E19FABD5-7673-4838-B27E-3C0120E4462D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>71AC8AC9-914C-4342-8092-323E714F5478</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>HilbertGilbertson</string>
+	<key>description</key>
+	<string>Convert a Discord snowflake to time</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Snowcord</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>wc {query}</string>
+				<key>leftcursor</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.showalfred</string>
+			<key>uid</key>
+			<string>01F4F07D-874D-449F-9EA6-EE3A86A32AC1</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>dd</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Enter Discord Snowflake</string>
+				<key>script</key>
+				<string>#!/bin/bash
+php snowcord.php $1</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Enter Discord Snowflake</string>
+				<key>title</key>
+				<string>Enter Discord Snowflake</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>45BDFF40-7374-4F55-A9FF-AEEB49D99D5E</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:launch}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>wc</string>
+						<key>outputlabel</key>
+						<string>wc</string>
+						<key>uid</key>
+						<string>3F481F84-6E33-49D9-B6D2-9968C7B3360E</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>clip</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>346F5E3D-D496-46E4-A34F-BF6608AC19FD</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>3FACC436-A2AB-4D54-87EC-CD35FAC98CF3</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>#!/bin/bash
+php clip.php $1</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>E19FABD5-7673-4838-B27E-3C0120E4462D</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>1</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>2</integer>
+				<key>hotmod</key>
+				<integer>1048576</integer>
+				<key>hotstring</key>
+				<string>D</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.hnc.DiscordPTB</string>
+					<string>com.hnc.Discord</string>
+					<string>com.hnc.DiscordCanary</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>350BB902-6BEB-49EC-837B-E4A15709211C</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>dd {query}</string>
+				<key>leftcursor</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.showalfred</string>
+			<key>uid</key>
+			<string>71AC8AC9-914C-4342-8092-323E714F5478</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>cb</key>
+					<string>{clipboard:0}</string>
+					<key>cbsel</key>
+					<string>{clipboard:1}</string>
+					<key>query</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>434514CC-78F1-4EC7-9C04-5E320F49A814</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Takes a Discord snowflake and converts it to a time (UTC, local and Unix timestamp).
+
+------
+CONFIG
+------
+• localTimezone (OPTIONAL)
+
+This should ONLY need to be set if you want to use a different timezone than your system clock. If left blank, your system timezone will be used automatically. Example value: "America/New_York"
+
+For available settings see:
+https://www.php.net/manual/en/timezones.php
+
+• usingWhencord
+
+If you're using my Alfred-Whencord workflow, you can set this to 1. When enabled, this will show you an additional option to pass a snowflake through to Whencord to create a dynamic timestamp for posting on Discord.
+
+----
+Date and time formats.
+These variables below all use PHP DateTime.
+See: https://www.php.net/manual/en/datetime.format.php 
+----
+• copyFormat
+
+When you select an item in the list, the time will be copied to your clipboard in this (PHP DateTime) format. Default is "Y-m-d H:i:s" (e.g. 2021-01-26 18:25:14).
+
+• copyLocalFormat
+
+Same as copyFormat above, except for local time. Default is "Y-m-d H:i:s".
+
+• format
+
+The main title format of the date and time displayed. Default is "Y-m-d H:i:s".
+
+• localFormat
+
+Same as copyFormat above, except for local time. Default is "Y-m-d H:i:s".
+
+• formatFull
+
+The detailed subtitle format of the date and time displayed. Default is "l jS F Y \a\t H:i:s T" (e.g. Tuesday 26th January 2021 at 18:25:14 UTC)
+
+• localFormatFull
+
+Same as formatFull above, except for local time. Default is "l jS F Y \a\t H:i:s T".</string>
+	<key>uidata</key>
+	<dict>
+		<key>01F4F07D-874D-449F-9EA6-EE3A86A32AC1</key>
+		<dict>
+			<key>xpos</key>
+			<integer>315</integer>
+			<key>ypos</key>
+			<integer>40</integer>
+		</dict>
+		<key>346F5E3D-D496-46E4-A34F-BF6608AC19FD</key>
+		<dict>
+			<key>xpos</key>
+			<integer>215</integer>
+			<key>ypos</key>
+			<integer>105</integer>
+		</dict>
+		<key>350BB902-6BEB-49EC-837B-E4A15709211C</key>
+		<dict>
+			<key>xpos</key>
+			<integer>45</integer>
+			<key>ypos</key>
+			<integer>275</integer>
+		</dict>
+		<key>3FACC436-A2AB-4D54-87EC-CD35FAC98CF3</key>
+		<dict>
+			<key>xpos</key>
+			<integer>310</integer>
+			<key>ypos</key>
+			<integer>125</integer>
+		</dict>
+		<key>434514CC-78F1-4EC7-9C04-5E320F49A814</key>
+		<dict>
+			<key>xpos</key>
+			<integer>215</integer>
+			<key>ypos</key>
+			<integer>305</integer>
+		</dict>
+		<key>45BDFF40-7374-4F55-A9FF-AEEB49D99D5E</key>
+		<dict>
+			<key>xpos</key>
+			<integer>45</integer>
+			<key>ypos</key>
+			<integer>85</integer>
+		</dict>
+		<key>71AC8AC9-914C-4342-8092-323E714F5478</key>
+		<dict>
+			<key>xpos</key>
+			<integer>495</integer>
+			<key>ypos</key>
+			<integer>305</integer>
+		</dict>
+		<key>E19FABD5-7673-4838-B27E-3C0120E4462D</key>
+		<dict>
+			<key>xpos</key>
+			<integer>310</integer>
+			<key>ypos</key>
+			<integer>275</integer>
+		</dict>
+	</dict>
+	<key>variables</key>
+	<dict>
+		<key>copyFormat</key>
+		<string>Y-m-d H:i:s T</string>
+		<key>copyLocalFormat</key>
+		<string>Y-m-d H:i:s</string>
+		<key>format</key>
+		<string>Y-m-d H:i:s</string>
+		<key>formatFull</key>
+		<string>l jS F Y \a\t H:i:s T</string>
+		<key>localFormat</key>
+		<string>Y-m-d H:i:s</string>
+		<key>localFormatFull</key>
+		<string>l jS F Y \a\t H:i:s T</string>
+		<key>localTimezone</key>
+		<string></string>
+		<key>usingWhencord</key>
+		<string>0</string>
+	</dict>
+	<key>version</key>
+	<string>1.0.0</string>
+	<key>webaddress</key>
+	<string>https://github.com/HilbertGilbertson/alfred-snowcord</string>
+</dict>
+</plist>
