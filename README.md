@@ -54,7 +54,7 @@ Alfred-Snowcord is released under the [MIT Licence][mit].
 [release]: https://github.com/HilbertGilbertson/alfred-snowcord/releases/latest
 [snowflake]: https://discord.com/developers/docs/reference#snowflakes
 [demo]: https://raw.githubusercontent.com/HilbertGilbertson/alfred-snowcord/master/demo.gif
-[demo-whencord]: https://raw.githubusercontent.com/HilbertGilbertson/alfred-whencord/master/demo-whencord.gif
+[demo-whencord]: https://raw.githubusercontent.com/HilbertGilbertson/alfred-snowcord/master/demo-whencord.gif
 [clipboard-history]: https://www.alfredapp.com/help/features/clipboard
 [timezones]: https://www.php.net/manual/en/timezones.php
 [datetime]: https://www.php.net/manual/en/datetime.format.php
