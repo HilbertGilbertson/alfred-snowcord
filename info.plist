@@ -140,6 +140,9 @@
 				<string>Enter Discord Snowflake</string>
 				<key>script</key>
 				<string>#!/bin/bash
+if [ -f "/opt/homebrew/bin/brew" ]; then
+	eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
 php snowcord.php $1</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
@@ -219,6 +222,9 @@ php snowcord.php $1</string>
 				<integer>102</integer>
 				<key>script</key>
 				<string>#!/bin/bash
+if [ -f "/opt/homebrew/bin/brew" ]; then
+	eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
 php clip.php $1</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
@@ -257,9 +263,9 @@ php clip.php $1</string>
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
+					<string>com.hnc.DiscordCanary</string>
 					<string>com.hnc.DiscordPTB</string>
 					<string>com.hnc.Discord</string>
-					<string>com.hnc.DiscordCanary</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -355,7 +361,9 @@ The detailed subtitle format of the date and time displayed. Default is "l jS F 
 
 • localFormatFull
 
-Same as formatFull above, except for local time. Default is "l jS F Y \a\t H:i:s T".</string>
+Same as formatFull above, except for local time. Default is "l jS F Y \a\t H:i:s T".
+
+Also don't forget to set a quick hotkey (e.g. ⌘D) in the workflow settings!</string>
 	<key>uidata</key>
 	<dict>
 		<key>01F4F07D-874D-449F-9EA6-EE3A86A32AC1</key>
@@ -435,7 +443,7 @@ Same as formatFull above, except for local time. Default is "l jS F Y \a\t H:i:s
 		<string>0</string>
 	</dict>
 	<key>version</key>
-	<string>1.0.0</string>
+	<string>1.0.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/HilbertGilbertson/alfred-snowcord</string>
 </dict>

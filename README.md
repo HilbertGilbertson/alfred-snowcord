@@ -23,7 +23,7 @@ Usage
 -----
 
 - `dd <snowflake>` — Convert a Discord snowflake to a time
-- `⌘d` — Quickly launch from Discord (Discord application must be the front most window)
+- [Hotkey](#hotkey) — Quickly launch from Discord (Discord application must be the front most window)
     - uses text selection within Discord (if highlighted text is a valid snowflake); or
     - uses the contents of the clipboard (if a valid snowflake)
 
@@ -45,6 +45,19 @@ but these options exist if you would like to alter time formats.
 | `localFormatFull`   | Same as `formatFull` above, except for local time.                                                                                                                                                                                    |
 | `usingWhencord`     | If you're using my [Alfred-Whencord workflow][whencord], you can set this to `1`. When enabled, this will show you an additional option to pass a snowflake through to Whencord to create a dynamic timestamp for posting on Discord. |
 
+### Hotkey
+
+When you import an Alfred workflow, any hotkeys are stripped out and must be [reconfigured][workflow-import] by the end
+user.
+
+Setting a hotkey for Snowcord is not _required_, but it remains a useful way to quickly trigger Snowcord. Head to the 
+workflow settings and set your chosen hotkey as shown in the image below.
+
+I recommend using **⌘D** (the `D` key is conveniently located and is one of the few keys on the left-hand side of the 
+keyboard that is not already bound to anything in Discord when combined with the Command key).
+
+<img src="https://raw.githubusercontent.com/HilbertGilbertson/alfred-snowcord/master/hotkey.gif" width="406"/>
+
 License
 ----------------------
 
@@ -61,3 +74,4 @@ Alfred-Snowcord is released under the [MIT Licence][mit].
 [config-sheet]: https://www.alfredapp.com/help/workflows/advanced/variables/#environment
 [whencord]: https://github.com/HilbertGilbertson/alfred-whencord
 [homebrew]: https://brew.sh
+[workflow-import]: https://www.alfredapp.com/blog/tips-and-tricks/tutorial-importing-and-setting-up-alfred-workflows/
