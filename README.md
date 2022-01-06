@@ -15,9 +15,9 @@ Download the latest release [here][release].
 
 **Note:** Written for Alfred 4+. Alfred's [Clipboard History][clipboard-history] must be enabled.
 
-**MacOS Monterey beta users:** Some stock packages have been removed from MacOS Monterey; this includes php. If you are
-using MacOS Monterey, I'd generally recommend installing [Homebrew][homebrew]. Then it's as simple
-as: `brew install php`.
+**MacOS Monterey users:** Some stock packages have been removed from MacOS Monterey; this includes php. If you are using
+MacOS Monterey, please install [Homebrew][homebrew], from which you can then quickly and easily install PHP. With 
+Homebrew it's as simple as: `brew install php`.
 
 Usage
 -----
