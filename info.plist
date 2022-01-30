@@ -139,11 +139,9 @@
 				<key>runningsubtext</key>
 				<string>Enter Discord Snowflake</string>
 				<key>script</key>
-				<string>#!/bin/bash
-if [ -f "/opt/homebrew/bin/brew" ]; then
-	eval "$(/opt/homebrew/bin/brew shellenv)"
-fi
-php snowcord.php $1</string>
+				<string>&lt;?php
+
+require 'snowcord.php';</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -153,7 +151,7 @@ php snowcord.php $1</string>
 				<key>title</key>
 				<string>Enter Discord Snowflake</string>
 				<key>type</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -221,17 +219,15 @@ php snowcord.php $1</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>#!/bin/bash
-if [ -f "/opt/homebrew/bin/brew" ]; then
-	eval "$(/opt/homebrew/bin/brew shellenv)"
-fi
-php clip.php $1</string>
+				<string>&lt;?php
+
+require 'clip.php';</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
-				<integer>0</integer>
+				<integer>1</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -263,9 +259,9 @@ php clip.php $1</string>
 				<integer>0</integer>
 				<key>relatedApps</key>
 				<array>
-					<string>com.hnc.DiscordCanary</string>
 					<string>com.hnc.DiscordPTB</string>
 					<string>com.hnc.Discord</string>
+					<string>com.hnc.DiscordCanary</string>
 				</array>
 				<key>relatedAppsMode</key>
 				<integer>1</integer>
@@ -443,7 +439,7 @@ Also don't forget to set a quick hotkey (e.g. ⌘D) in the workflow settings!</s
 		<string>0</string>
 	</dict>
 	<key>version</key>
-	<string>1.0.1</string>
+	<string>1.0.2</string>
 	<key>webaddress</key>
 	<string>https://github.com/HilbertGilbertson/alfred-snowcord</string>
 </dict>
